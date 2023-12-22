@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>TicTacToe</title>
+</head>
+
+<body >
+    <div class="container m-auto pt-10 flex flex-col ">
+        <div class="heading">
+            <h1 class="flex justify-center font-extrabold text-7xl text-moonstone">Tic-Tac-Toe</h1>
+        </div>
+        <div class="inner flex flex-row items-center justify-center">
+            
+            <div class="flex-1 flex justify-center">
+                <h4 class="text-5xl text-bluencs font-extrabold X text-center invisible opacity-0 transition-all duration-700">Player 1</h4>
+            </div>
+
+            <div
+                class="block flex-1 bg-moonstone rounded-lg shadow-moonstone shadow-sm m-auto mt-20 grid grid-rows-3 text-oxford">
+                <div class="row grid grid-flow-col grid-cols-3 grid">
+                    <div id="1"
+                        class="tile border-r-oxford border-r-8 border-b-oxford border-b-8 flex justify-center items-center ">
+                        <span></span>
+                    </div>
+                    <div id="2"
+                        class="tile border-r-oxford border-r-8 border-b-oxford border-b-8 flex justify-center items-center">
+                        <span></span>
+                    </div>
+                    <div id="3"
+                        class="tile border-b-oxford border-b-oxford border-b-8 flex justify-center items-center">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="row grid grid-flow-col grid-cols-3">
+                    <div id="4"
+                        class="tile border-r-oxford border-r-8 border-b-oxford border-b-8 flex justify-center items-center">
+                        <span></span>
+                    </div>
+                    <div id="5"
+                        class="tile border-r-oxford border-r-8 border-b-oxford border-b-8 flex justify-center items-center">
+                        <span></span>
+                    </div>
+                    <div id="6" class="tile border-b-oxford border-b-8 flex justify-center items-center"><span></span>
+                    </div>
+                </div>
+
+                <div class="row grid grid-flow-col grid-cols-3">
+                    <div id="7" class="tile border-r-oxford border-r-8 flex justify-center items-center"><span></span>
+                    </div>
+                    <div id="8" class="tile border-r-oxford border-r-8 flex justify-center items-center"><span></span>
+                    </div>
+                    <div id="9" class="tile flex justify-center items-center"><span></span></div>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <h4 class="text-5xl text-bluencs font-extrabold text-center O opacity-100 transition-all duration-700 ">Player 2</h4>
+            </div>
+
+        </div>
+
+        <div class="btn flex justify-center mt-8">
+            <button
+                class="bg-lapis text-white pb-2 pt-2 pl-4 pr-4 rounded-lg text-lg shadow-black shadow-md">Reset</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
